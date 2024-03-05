@@ -29,12 +29,19 @@ public class Sand {
         field[y][x] = 1;
     }
 
-    public void fall(int x, int y) {
-        int state = field[y][x];
-        int below = field[y + 1][x];
-        if (state == 1 && y < 2 && below == 0) {
-            field[y][x] = 0;
-            put(y + 1, x);
+
+    public void fall() {
+        for (int y = field.length - 2; y >= 0; y--) {
+            for (int x = 0; x < 3; x++) {
+                int state = field[y][x];
+                if (state == 1) {
+                    int below = field[y + 1][x];
+                    if (below == 0) {
+                        put(x, y + 1);
+                        field[y][x] = 0;
+                    }
+                }
+            }
         }
     }
 }

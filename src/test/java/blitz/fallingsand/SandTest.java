@@ -38,7 +38,7 @@ class SandTest {
         sand.put(1, 0);
 
         // when
-        sand.fall(1, 0);
+        sand.fall();
 
         // then
         assertEquals("000\n010\n000\n", sand.toString());
@@ -51,7 +51,7 @@ class SandTest {
         sand.put(1, 2);
 
         // when
-        sand.fall(1, 0);
+        sand.fall();
 
         // then
         assertEquals("000\n000\n010\n", sand.toString());
@@ -65,7 +65,7 @@ class SandTest {
         sand.put(1, 2);
 
         // when
-        sand.fall(1, 0);
+        sand.fall();
 
         // then
         assertEquals("000\n010\n010\n", sand.toString());
