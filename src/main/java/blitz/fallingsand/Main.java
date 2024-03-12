@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int width = Integer.parseInt(args[0]);
-        int height = Integer.parseInt(args[1]);
-        int sandQuant = Integer.parseInt(args[2]);
+        int width = 50;
+        int height = 10;
+        int sandQuant = 50;
 
         Scanner scanner = new Scanner(System.in);
         Sand sand = new Sand(width, height, new Random());
