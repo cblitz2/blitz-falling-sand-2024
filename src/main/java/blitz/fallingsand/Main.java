@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         int width = Integer.parseInt(args[0]);
-        int weight = Integer.parseInt(args[1]);
+        int height = Integer.parseInt(args[1]);
         int sandQuant = Integer.parseInt(args[2]);
 
         Scanner scanner = new Scanner(System.in);
