@@ -6,14 +6,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int Width = Integer.parseInt(args[0]);
-        int Height = Integer.parseInt(args[1]);
-        int SandQuant = Integer.parseInt(args[2]);
+        int width = Integer.parseInt(args[0]);
+        int weight = Integer.parseInt(args[1]);
+        int sandQuant = Integer.parseInt(args[2]);
 
         Scanner scanner = new Scanner(System.in);
-        Sand sand = new Sand(Width, Height, new Random());
+        Sand sand = new Sand(width, height, new Random());
 
-        sand.randomSand(SandQuant);
+        sand.randomSand(sandQuant);
         System.out.println("Press Enter to make the sand fall or type 'exit' to quit ");
 
         while (true) {
