@@ -64,8 +64,6 @@ public class Sand {
                     } else if (field[y + 1][x + direction2] == 0) {
                         field[y][x] = 0;
                         field[y + 1][x + direction2] = 1;
-                    } else {
-                        field[y][x] = 1;
                     }
                 }
             }
@@ -74,7 +72,7 @@ public class Sand {
 
     public void randomSand(int n) {
         for (int i = 0; i < n; i++) {
-            int x = random.nextInt(field[0].length - 1);
+            int x = random.nextInt(field[0].length);
             int y = random.nextInt(field.length);
             put(x, y);
         }
