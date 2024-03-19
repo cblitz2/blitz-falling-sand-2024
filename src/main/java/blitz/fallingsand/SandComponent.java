@@ -14,11 +14,13 @@ public class SandComponent extends JComponent {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
+        int[][] field = sand.getField();
+
         sand.fall();
         repaint();
 
-        for (int y = 0; y < sand.getField().length; y++) {
-            for (int x = 0; x < sand.getField()[y].length; x++) {
+        for (int y = 0; y < field.length; y++) {
+            for (int x = 0; x < field[y].length; x++) {
                 if (sand.get(x, y) == 1) {
                     g.fillRect(x * 4, y, 5, 5);
                 }
