@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class SandFrame extends JFrame {
+
     private final Sand sand = new Sand(300, 400);
 
     public SandFrame() {
@@ -18,4 +19,5 @@ public class SandFrame extends JFrame {
         SandComponent sandComponent = new SandComponent(sand);
         add(sandComponent, BorderLayout.CENTER);
     }
+
 }
